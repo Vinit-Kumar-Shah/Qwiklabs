@@ -33,6 +33,7 @@
     gsutil mb gs://$ID-bucket
 
 **6. Set up a Cloud Dataflow Pipeline**
+    
     gcloud dataflow jobs run iotlabflow \
         --gcs-location gs://dataflow-templates-us-central1/latest/PubSub_to_BigQuery \
         --region $REGION \
